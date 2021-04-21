@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "PassCulture",
+      "package_name": "com.passculture",
+      "sha256_cert_fingerprints": [
+        "70:77:23:08:81:85:D1:CE:48:8F:EB:BB:D7:85:70:18:78:EF:4F:94:A7:5D:AE:7D:9C:54:BF:E2:AF:3F:EF:D9"
+      ]
+    }
+  }
+]
