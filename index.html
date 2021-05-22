@@ -2,25 +2,206 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <title>Nous rencontrons des difficultés pour ouvrir ce lien</title>
-    <link rel="stylesheet" href="theming/app.css">
-    <script>
-      function openHelpPage() {
-        window.open("https://aide.passculture.app/fr/articles/5260446-on-m-indique-de-me-rendre-sur-mon-telephone-alors-que-j-y-suis-deja")
+    <style type="text/css">
+
+    @font-face {
+      font-family: Montserrat-Medium;
+      src: url(theming/fonts/Montserrat-Medium.ttf), url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: Montserrat-Regular;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(theming/fonts/Montserrat-Regular.ttf), url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    }
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    
+    body {
+      line-height: 1;
+    }
+    
+    ol, ul {
+      list-style: none;
+    }
+    
+    blockquote, q {
+      quotes: none;
+    }
+    
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /** Pass culture styles */
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+    }
+
+    body {
+      font-size: 0.8em;
+      font-family: Montserrat-Regular;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+      max-height: 1000px;
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 60em;
+      margin: auto;
+      text-align: center;
+    }
+
+    #phone-image {
+      width: 200px;
+      max-width: 80%;
+    }
+
+    h1 {
+      font-family: Montserrat-Medium;
+      font-size: calc(1.7em + 1vmin);
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.26;
+      letter-spacing: normal;
+      margin: 10px 0;
+    }
+
+    a.button {
+      text-decoration: none;
+      font-family: Montserrat-Medium;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      border-radius: 1em;
+      padding: 1.2em;
+      margin: 1em 0;
+      background-color: #eb0055;
+      border-color: #eb0055;
+      border-width: 0.2em;
+      width: 100%;
+      max-width: 80%;
+    }
+
+    a.button:active {
+      vertical-align: top;
+      background-color: #e0185e;
+      border-color: #e0185e;
+      outline: none;
+    }
+
+    p {
+      font-size: calc(1.4em + 1vmin);
+      color: #626262;
+    }
+
+    .mh-2 {
+      margin: 2em 0;
+    }
+
+    .pv-2 {
+      padding: 0 2em;
+    }
+
+    .p-2 {
+      padding: 2em;
+    }
+
+    .pt-4 {
+      padding-top: 4em;
+    }
+    @media screen and (min-height: 640px){
+      body { 
+        font-size: 1em;
       }
-    </script>
+      
+      a.button {
+        max-width: 20em;
+        padding: 1.6em;
+      }
+
+      #phone-image {
+        width: 280px;
+        max-width: 80%;
+      }
+
+      h1 {
+        font-size: calc(1.8em + 1vmin);
+      }
+    }
+    </style>
   </head>
   <body>
     <div class="container">
-      <img id="phone-image" src="assets/svg/pass-culture-mobile.svg" alt="En cours de chargement">
-      <h1 class="title">Nous rencontrons des difficultés pour ouvrir ce lien</h1>
-      <button id="help-button" onclick="openHelpPage()">
+      <img id="phone-image" class="p-2 pt-4" src="assets/svg/pass-culture-mobile.svg" alt="En cours de chargement">
+      <h1 class="pv-2 title">Nous rencontrons des difficultés pour ouvrir ce lien</h1>
+      <a role="button" class="button" href="https://aide.passculture.app/fr/articles/5260446-on-m-indique-de-me-rendre-sur-mon-telephone-alors-que-j-y-suis-deja">
         Si tu es sur téléphone, rends-toi ici
-      </button>
-      <span class="paragraph">Si tu n'es pas sur téléphone, réouvre l'email à partir d'un téléphone.</span>
-      <img class="margin-top-176" src="assets/svg/pass-culture-logo-lwith-text.svg" alt="Logo PassCulture" />
+      </a>
+      <p class="pv-2">Si tu n'es pas sur ton téléphone, réouvre le lien reçu par email à partir de ton téléphone.</p>
+      <img class="mh-2" src="assets/svg/pass-culture-logo-lwith-text.svg" alt="Logo PassCulture">
     </div>
   </body>
 </html>
