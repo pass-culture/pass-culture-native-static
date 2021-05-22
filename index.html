@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <title>Rends-toi sur ton téléphone !</title>
+    <title>Nous rencontrons des difficultés pour ouvrir ce lien</title>
     <link rel="stylesheet" href="theming/app.css">
+    <script>
+      function openHelpPage() {
+        window.open("https://aide.passculture.app/fr/articles/5260446-on-m-indique-de-me-rendre-sur-mon-telephone-alors-que-j-y-suis-deja")
+      }
+    </script>
   </head>
   <body>
     <div class="container">
-      <img class="margin-top-64" src="assets/svg/pass-culture-mobile.svg" alt="En cours de chargement">
-      <h1 class="title">Rends-toi sur ton téléphone !</h1>
-      <span class="paragraph">Cette action est impossible depuis ton ordinateur, réouvre l'e-mail à partir de ton téléphone pour accéder à ton compte.</span>
-      <span style="margin-top: 20px;" class="paragraph">Si tu n'arrives pas à valider ton compte tu peux toujours le faire en réinitialisant ton mot de passe dans l'application ;)</span>
-      <span class="paragraph" style="margin: 10px 0;">On se retrouve dans l'onglet profil, bouton "Connecte-toi"</span>
+      <img id="phone-image" src="assets/svg/pass-culture-mobile.svg" alt="En cours de chargement">
+      <h1 class="title">Nous rencontrons des difficultés pour ouvrir ce lien</h1>
+      <button id="help-button" onclick="openHelpPage()">
+        Si tu es sur téléphone, rends-toi ici
+      </button>
+      <span class="paragraph">Si tu n'es pas sur téléphone, réouvre l'email à partir d'un téléphone.</span>
       <img class="margin-top-176" src="assets/svg/pass-culture-logo-lwith-text.svg" alt="Logo PassCulture" />
     </div>
   </body>
