@@ -118,11 +118,11 @@
       max-width: 80%;
     }
 
-    #external-link-icon {
+    img.external-link-icon {
       width: calc(1.4em + 1vmin);
     }
 
-    #difficulties-paragraph {
+    span.difficulties-paragraph {
       vertical-align: super;
     }
 
@@ -216,17 +216,14 @@
       <h1 class="pv-2 title">Le lien issu de ton mail n'a pas fonctionné</h1>
       <p class="pv-2">Assure toi de l'ouvrir sur ton mobile en cliquant ici :</p>
       <a role="button" id="universal-link" class="button" href="url">Réessayer</a>
-     
       <p class="pv-2">
-        <span id="difficulties-paragraph">Si tu rencontres à nouveau des difficultés, consulte </span>
+        <span class="difficulties-paragraph">Si tu rencontres à nouveau des difficultés, consulte </span>
         <a class="external-link" role="button" href="https://aide.passculture.app/fr/articles/5260446-j-ai-un-probleme-avec-les-liens-sur-mon-application">
-          <img id="external-link-icon" src="assets/svg/external-link-site.svg" alt="Lien vers site externe">
+          <img class="external-link-icon" src="assets/svg/external-link-site.svg" alt="Lien vers site externe">
           notre centre d'aide
         </a>
       </p>
-      
       <img class="mh-2" src="assets/svg/pass-culture-logo-lwith-text.svg" alt="Logo PassCulture">
-      
     </div>
     <script >
       const url = window.location.href
