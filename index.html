@@ -118,6 +118,14 @@
       max-width: 80%;
     }
 
+    #external-link-icon {
+      width: calc(1.4em + 1vmin);
+    }
+
+    #difficulties-paragraph {
+      vertical-align: super;
+    }
+
     h1 {
       font-family: Montserrat-Medium;
       font-size: calc(1.7em + 1vmin);
@@ -127,6 +135,15 @@
       line-height: 1.26;
       letter-spacing: normal;
       margin: 10px 0;
+    }
+
+   a.external-link {
+      color: #eb0055;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: calc(1.4em + 1vmin);
+      align-items: center;
+      display: inline-flex;
     }
 
     a.button {
@@ -153,7 +170,7 @@
     }
 
     p {
-      font-size: calc(1.4em + 1vmin);
+      font-size: calc(1.2em + 1vmin);
       color: #626262;
     }
 
@@ -162,7 +179,7 @@
     }
 
     .pv-2 {
-      padding: 0 2em;
+      padding: 0 2em;      
     }
 
     .p-2 {
@@ -196,12 +213,25 @@
   <body>
     <div class="container">
       <img id="phone-image" class="p-2 pt-4" src="assets/svg/pass-culture-mobile.svg" alt="En cours de chargement">
-      <h1 class="pv-2 title">Nous rencontrons des difficultés pour ouvrir ce lien</h1>
-      <a role="button" class="button" href="https://aide.passculture.app/fr/articles/5260446-on-m-indique-de-me-rendre-sur-mon-telephone-alors-que-j-y-suis-deja">
-        Si tu es sur téléphone, rends-toi ici
-      </a>
-      <p class="pv-2">Si tu n'es pas sur ton téléphone, réouvre le lien reçu par email à partir de ton téléphone.</p>
+      <h1 class="pv-2 title">Le lien issu de ton mail n'a pas fonctionné</h1>
+      <p class="pv-2">Assure toi de l'ouvrir sur ton mobile en cliquant ici :</p>
+      <a role="button" id="universal-link" class="button" href="url">Réessayer</a>
+     
+      <p class="pv-2">
+        <span id="difficulties-paragraph">Si tu rencontres à nouveau des difficultés, consulte </span>
+        <a class="external-link" role="button" href="https://aide.passculture.app/fr/articles/5260446-j-ai-un-probleme-avec-les-liens-sur-mon-application">
+          <img id="external-link-icon" src="assets/svg/external-link-site.svg" alt="Lien vers site externe">
+          notre centre d'aide
+        </a>
+      </p>
+      
       <img class="mh-2" src="assets/svg/pass-culture-logo-lwith-text.svg" alt="Logo PassCulture">
+      
     </div>
+    <script >
+      const url = window.location.href
+      const linkElement = document.getElementById("universal-link")
+      linkElement.href = url
+    </script>
   </body>
 </html>
